@@ -2,7 +2,7 @@
   <p>
     <strong>Title:</strong>
     <%= post.title %>
-    <p>posted by <%= post.user.email %> </p>
+    <p>posted by <%= link_to post.user.name, user_path(post.user) %> </p>
   </p>
   <p>
     <strong>Views:</strong>
